@@ -15,9 +15,13 @@
     --navfontLogo-size: 1.5rem;
     --footerfont-size: 1.2rem;
     --footerfont-size-copyright: 0.8rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
+    margin: -5px;
+    padding: 50px;
+    
+}
+
+body{
+    overflow-x: hidden;
 }
 
 #navbar {
@@ -25,8 +29,10 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
-    margin-left: -5px;
-    width: 90%;
+    left:0;
+    width: 100%;
+    margin: auto;
+    height: 2rem;
     color: #fff;
     padding: 10px 0;
     display: inline;
@@ -36,7 +42,6 @@
     /* if the item inside is overfilling make it go to the next line */
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .nav-link {
@@ -66,7 +71,7 @@
 
 #spaceforNavbar {
     /* this exist because navbar has an absolute position not relative */
-    margin: 4.5rem;
+    height:  2rem;
 }
 
 
@@ -76,7 +81,7 @@
     grid-template-columns: 0.6fr 0.5fr; */
     display: flex;
     height: auto;
-    width: 90%;
+    width: 100%;
 }
 
 #intro-div p {
@@ -117,7 +122,7 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 90%;
+    width: 100%;
     font-size: var(--footerfont-size);
 }
 
