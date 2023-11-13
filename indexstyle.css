@@ -66,8 +66,51 @@
 
 #spaceforNavbar {
     /* this exist because navbar has an absolute position not relative */
-    margin: 50px;
+    margin: 4.5rem;
 }
+
+
+#intro-div {
+    background-color: #ECEB98;
+    /* display: grid;
+    grid-template-columns: 0.6fr 0.5fr; */
+    display: flex;
+    height: auto;
+    width: 90%;
+}
+
+#intro-div p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #65676B;
+    margin: 3rem 2rem 2rem 2rem;
+    padding: 0;
+}
+
+#intro-div p span {
+    /* CSS properties */
+    color: #0866FF;
+}
+
+#intro-div a{
+    text-decoration: none;
+    color: #65676B;
+    border: 2px solid #0866FF;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+#intro-img img {
+    width: 30rem;
+    height: 20rem;
+    object-fit: fill;
+    margin: auto;
+}
+
+
+
 
 #footer {
     background-color: var(--footer-background);
@@ -125,4 +168,9 @@ a {
 
 
 /* small screen size Phone */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    :root {
+        font-size: 6px;
+     
+    }
+}
