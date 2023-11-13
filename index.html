@@ -11,50 +11,7 @@
     <script src="https://kit.fontawesome.com/53ca21cb35.js" crossorigin="anonymous"></script>
     <!-- add styles -->
     <style>
-        #courses{
-            max-width: 90%;
-        }
-        #courses p{
-            margin-left: 2rem;
-            font-size: 1.5rem;
-        }
-        #grid-courses{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin: 0 2rem;
-        }
-        .courses-gridbox{
-            display: block;
-            max-width: 20rem;
-            max-height: 25rem;
-            margin: auto;
-            border: 1px solid black;
-        }
 
-        .courses-gridbox i{
-            margin: auto;
-            color: gold;
-        }
-        .courses-gridbox h4{
-            display: block;
-            margin: auto;
-            margin-left: 10px;
-            font-weight: 100;
-        }
-        .courses-gridbox h3{
-            display: block;
-            margin: auto;
-            margin-left: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .courses-gridbox img{
-            display: block;
-            margin: auto;
-            width: 100%;
-            height: 40%;
-        }
     </style>
 </head>
 
@@ -86,11 +43,14 @@
     <div id="courses">
         <p>COURSES</p>
         <div id="grid-courses">
+            <!-- all grid items use javascript to fill in -->
             <div class="courses-gridbox">
                 <img src="Image\htmlIMG.png" alt="courseImg">
                 <h3>The Complete Guide to HTML</h3>
                 <h4>From zero to master in this course!</h4>
-                <h4>4.7 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> (1060)</h4>
+                <h4>4.7 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star-half-stroke"></i> (1060)</h4>
                 <h4>$69.99</h4>
             </div>
             <div class="courses-gridbox">2</div>
@@ -101,6 +61,23 @@
             <div class="courses-gridbox">7</div>
             <div class="courses-gridbox">8</div>
         </div>
+    </div>
+
+    <div id="review">
+        <!-- a review box with quote from student and a round student profile picture -->
+        <div id="review-box">
+            <div id="review-text">
+                <p>“Best tutorial I've ever viewed on React, bar none. I have found this course to be clear, concise,
+                    direct, and easy-to-follow. It has also been fun to watch and easy to comprehend all the elements.
+                    Thank you!”</p>
+
+            </div>
+            <div id="review-img"><img src="Image\studentIMG.png" alt="studentImg">
+                <h3>Mary Jane</h3>
+                <p>Student of Web Developer</p>
+            </div>
+        </div>
+        <button id="review-button"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
 
@@ -146,6 +123,8 @@
             </ul>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
