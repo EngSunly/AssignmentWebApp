@@ -147,6 +147,7 @@ body {
     border: 1px solid black;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    padding-bottom: 1rem;
 }
 
 .courses-gridbox i {
@@ -180,6 +181,9 @@ body {
 }
 
 /* end of Courses Css */
+
+
+/* start of review css */
 
 #review {
     margin: 5rem;
@@ -220,6 +224,7 @@ body {
 #review-img img {
     width: 7rem;
     height: 7rem;
+    border-radius: 5rem;
 }
 
 #review-button {
@@ -230,8 +235,40 @@ body {
     margin-right: 10rem;
 }
 
+/* end of review Css */
 
 
+/* start of teachers css */
+
+#teachers{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    height: 25rem;
+    background: #ECEB98;
+    
+}
+#teachersbox{
+    display: flex;
+    width: 80%;
+    height: 20rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
+}
+.img img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 2rem;
+}
+.img{
+    margin: auto;
+}
+
+
+
+/* end of teacher css */
 
 
 
@@ -310,6 +347,7 @@ a {
 
     }
 }
+
 @media (max-width: 600px) {
     :root {
         font-size: 4px;

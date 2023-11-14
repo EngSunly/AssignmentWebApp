@@ -74,11 +74,9 @@ function fillgrid(griditems) {
     // get length of griditems
     document.getElementById("grid-courses").innerHTML = "";
     const griditemsLength = griditems.length;
-    console.log(griditemsLength);
 
     // loop through griditems
     for (let i = 0; i < griditemsLength; i++) {
-        console.log(griditems[i].img);
         document.getElementById("grid-courses").innerHTML += `
         <div class="courses-gridbox">
         <img src="${griditems[i].img}" alt="courseImg">
@@ -100,40 +98,47 @@ fillgrid(griditems);
 const students = [
     {
         img: `Image/studentIMG.png`,
-        name: `Micheal`,
+        name: `Mary Jane`,
         review: `I am a student of this course and I am very happy to be a part of this course. I have learned a lot from this course. I am a student of this course and I am very happy to be a part of this course. I have learned a lot from this course.`,
         course: `Student of Css Developer`
     },
     {
-        img: `Image/studentIMG2.png`,
+        img: `Image/studentIMG3.png`,
         name: `John`,
         review: `This course was very well-organized and easy to follow. The instructor was very knowledgeable and explained everything in a way that was easy to understand. I would recommend this course to anyone who wants to learn HTML.`,
         course: `Student of Web Developer`
     },
     {
-        review:`
-        "This course was very well-organized and easy to follow. The instructor was very knowledgeable and explained everything in a way that was easy to understand. I would recommend this course to anyone who wants to learn HTML."
-        "I really enjoyed this course! It was very informative and helpful. I learned a lot about CSS and how to use it to style my websites. I would definitely recommend this course to anyone who wants to learn CSS."
-        "This course was a great way to learn JavaScript. The instructor was very patient and helpful. I would definitely recommend this course to anyone who wants to learn JavaScript."
-        "This course was very comprehensive and covered a lot of material. I would definitely recommend this course to anyone who wants to learn React."
-        "This course was very well-structured and easy to follow. The instructor was very knowledgeable and explained everything in a way that was easy to understand. I would definitely recommend this course to anyone who wants to learn Angular."
-        "This course was a great way to learn PHP. The instructor was very patient and helpful. I would definitely recommend this course to anyone who wants to learn PHP."
-        "This course was very comprehensive and covered a lot of material. I would definitely recommend this course to anyone who wants to learn C#."
-        "This course was a great way to learn Python. The instructor was very patient and helpful. I would definitely recommend this course to anyone who wants to learn Python."
-        `
+        img: `Image/studentIMG2.png`,
+        name: `Emily`,
+        review: `I found the course content to be incredibly informative and engaging. The practical examples provided a great hands-on learning experience. I would highly recommend this course to anyone interested in improving their coding skills.`,
+        course: `Student of JavaScript Developer`
+    },
+    {
+        img: `Image/studentIMG4.png`,
+        name: `Sophia`,
+        review: `The course on React development exceeded my expectations. The step-by-step approach helped me grasp complex concepts easily. I now feel confident in my React skills and am ready to tackle real-world projects.`,
+        course: `Student of React Developer`
+    },
+    {
+        img: `Image/studentIMG5.png`,
+        name: `Daniel`,
+        review: `Learning Angular in this course was a game-changer for me. The instructor's clear explanations and practical exercises made the learning process enjoyable. I'm now equipped with the skills to create dynamic web applications.`,
+        course: `Student of Angular Developer`
     }
-
-]
+];
 
 // add event when review button is clicked
 
 document.getElementById("review-button").addEventListener("click", function () {
+    // get random number between 0 to 4
+    const i = Math.floor(Math.random() * students.length);
     document.getElementById("review-box").innerHTML =
         ` <div id="review-text">
-    <p>“${students[0].review}”</p>
+    <p>“${students[i].review}”</p>
     </div>
-    <div id="review-img"><img src="Image\studentIMG.png" alt="studentImg">
-    <h3>Mary Jane</h3>
-    <p>Student of Web Developer</p>
+    <div id="review-img"><img src="${students[i].img}" alt="studentImg">
+    <h3>${students[i].name}</h3>
+    <p>${students[i].course}</p>
 </div>`
 });
