@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGrow</title>
+    <!-- if you need bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    
+    <link rel="stylesheet" href="HeaderFooter.css">
+    <!-- get cdn for logo open public -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/53ca21cb35.js" crossorigin="anonymous"></script>
+    <!-- add styles -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <!-- generate an inline icon or logo placeholder -->
+
+        <h1 class="nav-linkLogo logomobile mobileview"><button id="toggle-button" class="dropdown mobileview"><i
+                    class="fa-solid fa-list"></i></button>VGrow</h1></a>
+        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#intro-div">Home</a>
+        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#courses">Courses</a>
+        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="ContactUS\AboutUs.html">About Us</a>
+        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#teachers">Our Team</a>
+        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#Oppurtunity">Oppurtunity</a>
+        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#footer">ContactUs</a>
+        <div id="mviewbottom " class="mobileview"></div>
+
+        <div class="windowview navwindow">
+            <h1 class="nav-linkLogo windowview">VGrow</h1></a>
+            <a class="nav-links windowview" href="#intro-div">Home</a>
+            <a class="navigation-link windowview" href="#courses">Courses</a>
+            <a class="navigation-link windowview" href="ContactUS\AboutUs.html">About Us</a>
+            <a class="navigation-link windowview" href="#teachers">Our Team</a>
+            <a class="navigation-link windowview" href="#Oppurtunity">Oppurtunity</a>
+            <a class="navigation-link windowview" href="#footer">ContactUs</a>
+        </div>
+
+    </nav>
+    <div id="spaceforNavbar"></div>
+
+
+
+    <div id="footer">
+        <!-- 3 grid 
+            1 for logo 
+            2 for News,Job Oppurtunity About Us Privacy Policy 
+            3 Contact Us (Phone Number Email and Address)
+        -->
+        <div class="footer-grid-1 windowview">
+            <div class="logo">
+                <h1 id="footer-logo">VGrow</h1></a>
+            </div>
+        </div>
+
+        <div class="mobileview">
+            <div class="logo">
+                <h1>VGrow</h1></a>
+            </div>
+        </div>
+        <div class="footer-grid-2">
+            <ul class="footer-ul">
+                <li class="footer-li"><a href="News">News</a></li>
+                <li class="footer-li"><a href="Job Oppurtunity">Job Oppurtunity</a></li>
+                <li class="footer-li"><a href="About Us">About Us</a></li>
+                <li class="footer-li"><a href="Privacy Policy">Privacy Policy</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-grid-3">
+            <ul class="footer-ul">
+                <li class="footer-li">
+                    <a href="Contact Us">Contact Us</a>
+                </li>
+                <li class="footer-li">
+                    <a href="tel:023 24 6666"><i class="fa-solid fa-phone"></i> </i> 023 24 6666</a>
+                </li>
+                <li class="footer-li">
+                    <a href="mailto:VGrow@gmail.com"><i class="fa-regular fa-envelope"></i> VGrow@gmail.com</a>
+                </li>
+                <li class="footer-li">
+                    <a href="https://maps.app.goo.gl/nCPiVxH7z6fZz1ND7"><i class="fa-solid fa-location-dot"></i>
+                        Royal
+                        University of Phnom Penh</a>
+                </li>
+            </ul>
+        </div>
+        <div id="Mcopyright-footer"><i class="fa-regular fa-copyright"></i>2023, VGrow.com.kh</div>
+    </div>
+
+    <script>
+        const togglebutton = document.getElementById("toggle-button");
+        const dropdowncontents = document.querySelectorAll(".dropdown-content");
+
+        function togglefunction() {
+            dropdowncontents.forEach(function (dropdowncontent) {
+                dropdowncontent.classList.toggle("Mnavtoggle");
+            });
+        }
+        // on load toggle once to hide the nav bar
+        togglefunction();
+
+        togglebutton.addEventListener("click", function () {
+            togglefunction()
+        });
+    </script>
+</body>
+
+</html>

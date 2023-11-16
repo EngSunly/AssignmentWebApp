@@ -1,0 +1,45 @@
+#aboutUS {
+    background-color: #f2f2f2;
+    display: flex;
+
+  }
+
+  .container {
+    margin-top: 50px;
+    align-items: center;
+    background-color: aliceblue;
+  }
+
+  .container h1{
+    background-color: green;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .feedback-form {
+    margin-top: 30px;
+  }
+
+  .card{
+    border-radius: 15px;
+  }
+
+  .ceo-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .ceo-card .card {
+    width: 18rem;
+    margin: 10px;
+  }
+  .feedback-form{
+    background-color: antiquewhite;
+  }
