@@ -1,7 +1,4 @@
 :root {
-    --background-gradient: linear-gradient(90deg,
-            #8EC5FC,
-            #E0C3FC);
     --nav-background: white;
     --nav-text-color: #0866FF;
     --footer-background: #55585C;
@@ -25,7 +22,8 @@ body {
 }
 
 /* navbar css */
-#navbar {
+
+.navwindow {
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -45,6 +43,8 @@ body {
     justify-content: center;
 }
 
+
+
 .nav-link {
     margin: 0 1rem 0 1rem;
     font-size: var(--navfont-size);
@@ -58,7 +58,7 @@ body {
     color: var(--nav-text-color);
     text-decoration: underline;
     font-weight: bold;
-    font-size: (var(--navfont-size));
+
 }
 
 .nav-linkLogo {
@@ -68,6 +68,14 @@ body {
     color: var(--nav-text-color);
     font-weight: bold;
     font-size: var(--navfontLogo-size)
+}
+
+.dropdown {
+    display: none;
+}
+
+.mobileview {
+    display: none;
 }
 
 #spaceforNavbar {
@@ -240,14 +248,15 @@ body {
 
 /* start of teachers css */
 
-#teachers{
+#teachers {
     padding-top: 2rem;
     padding-left: 2rem;
     height: 25rem;
     background: #ECEB98;
-    
+
 }
-#teachersbox{
+
+#teachersbox {
     display: flex;
     width: 80%;
     height: 20rem;
@@ -256,13 +265,15 @@ body {
     text-align: center;
     margin: auto;
 }
-.img img{
+
+.teacherimg img {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     margin: 2rem;
 }
-.img{
+
+.teacherimg {
     margin: auto;
 }
 
@@ -332,24 +343,376 @@ a {
 
 
 
-/* screen size 1024px */
-@media (max-width: 1024px) {
+/* screen size 1200px */
+@media (max-width: 1200px) {
     :root {
-        font-size: 8px;
+        font-size: 10px;
     }
+
+    .nav-link{
+        font-size: 2rem;
+    }
+    .nav-linkLogo{
+        font-size: 2.2rem;
+    }
+
+
+    /* Courses Css */
+    #courses {
+        max-width: 100%;
+    }
+
+    #courses p {
+        margin-left: 2rem;
+        font-size: 2.5rem;
+    }
+
+    #grid-courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 2rem;
+    }
+
+    .courses-gridbox {
+        display: block;
+        min-height: 15rem;
+        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border: 1px solid black;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .courses-gridbox i {
+        margin: auto;
+        color: gold;
+    }
+
+    .courses-gridbox h4 {
+        display: block;
+        margin: auto;
+        margin-left: 10px;
+        font-weight: 100;
+    }
+
+    .courses-gridbox h3 {
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        margin-left: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        height: fit-content;
+        font-size: 2.5rem;
+    }
+
+    .courses-gridbox img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 50%;
+    }
+    /* end of Courses Css */
 
 }
 
 /* screen size 768px */
 @media (max-width: 768px) {
     :root {
-        font-size: 6px;
+
+        font-size: 8px;
+        margin: -5px;
+        padding: 10px;
 
     }
-}
 
-@media (max-width: 600px) {
-    :root {
-        font-size: 4px;
+    /* nav link mobile view */
+    #navbar {
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        padding: 1rem;
     }
+
+    .windowview {
+        display: none;
+    }
+
+    .mobileview {
+        display: block;
+        left: 0;
+        font-size: 4rem;
+    }
+
+    .dropdown {
+        display: inline;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        height: 2rem;
+    }
+
+    .Mnavtoggle {
+        display: block;
+        height: 4rem;
+        padding: 0.5rem;
+    }
+
+    #spaceforNavbar {
+        /* this exist because navbar has an absolute position not relative */
+        display: none;
+    }
+
+    /* end of mobile link view */
+
+    /* footer mobile */
+    #footer {
+        display: block;
+        margin: auto;
+    }
+
+    .logo {
+        margin: auto;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #Mcopyright-footer {
+        font-size: 1rem;
+        margin: auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer-li {
+        margin: auto;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    /* end footer mobile */
+
+
+    /* intro div css */
+    #intro-div {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+        padding: 0.5rem;
+    }
+
+    #intro-text {
+        text-align: center;
+    }
+
+    #intro-div p {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #65676B;
+        margin: 3rem 2rem 2rem 2rem;
+        padding: 0;
+    }
+
+    #intro-div p span {
+        color: #0866FF;
+    }
+
+    #intro-div a {
+        text-decoration: none;
+        color: #65676B;
+        border: 2px solid #0866FF;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        font-size: 3.5rem;
+        font-weight: 500;
+        margin-left: 2rem;
+    }
+
+    #intro-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin: auto;
+    }
+
+
+    /* end of introdiv */
+
+    /* Courses Css */
+    #courses {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #courses p {
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        font-size: 5.5rem;
+    }
+
+    #grid-courses {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 2rem;
+    }
+
+    .courses-gridbox {
+        display: block;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding-bottom: 1rem;
+        height: fit-content;
+    }
+
+    .courses-gridbox i {
+        margin: auto;
+        color: gold;
+    }
+
+    .courses-gridbox h4 {
+        display: block;
+        margin: auto;
+        padding: 1rem;
+        font-weight: 100;
+        font-size: 2.5rem;
+        height: fit-content;
+    }
+
+    .courses-gridbox h3 {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 1rem;
+        height: fit-content;
+
+    }
+
+    .courses-gridbox img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 50%;
+    }
+
+    /* end of Courses Css */
+
+
+    /* start of review css */
+
+    #review {
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+    #review-box {
+        height: fit-content;
+        padding: 2rem;
+        width: 90%;
+        display: flex;
+        border: 1px solid black;
+        margin: auto;
+    }
+
+    #review-text {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        height: fit-content;
+    }
+
+    #review-img {
+        width: 30%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        row-gap: 0;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+    #review-img img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 5rem;
+    }
+
+    #review-button {
+
+        font-size: 5rem;
+        height: fit-content;
+        width: fit-content;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    /* end of review Css */
+
+    /* start of teachers css */
+
+    #teachers {
+        display: block;
+        height: fit-content;
+        background: #ECEB98;
+    }
+
+    #teachers p {
+        font-size: 3rem;
+        margin: auto;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #teachers h3 {
+        font-size: 3rem;
+        margin: auto;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #teachersbox {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .teacherimg img {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        margin: 2rem;
+    }
+
+    .teacherimg {
+        margin: auto;
+    }
+
+    /* end of teacher css */
+
+
+
 }

@@ -142,3 +142,28 @@ document.getElementById("review-button").addEventListener("click", function () {
     <p>${students[i].course}</p>
 </div>`
 });
+
+
+// toggle button
+// const hamburger = document.querySelector('.hamburger');
+// const navLinks = document.querySelector('.nav-links');
+
+// hamburger.addEventListener('click', () => {
+//   navLinks.classList.toggle('active');
+// });
+
+// id="toggle-button"
+const togglebutton = document.getElementById("toggle-button");
+const dropdowncontents = document.querySelectorAll(".dropdown-content");
+
+function togglefunction(){
+    dropdowncontents.forEach(function(dropdowncontent) {
+        dropdowncontent.classList.toggle("Mnavtoggle");
+    });
+}
+// on load toggle once to hide the nav bar
+togglefunction();
+
+togglebutton.addEventListener("click", function () {
+    togglefunction()
+});
