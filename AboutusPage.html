@@ -42,91 +42,11 @@
 
     </nav>
     <div id="spaceforNavbar"></div>
-    <div id="intro-div">
-        <!-- 2 div -->
-        <div id="intro-text">
-            <p><span>VGrow</span> is the best for self study, we build this website to for short course and focus on
-                programming language. </p>
-            <a href="#Courses">Enroll Now</a>
-        </div>
-        <div id="intro-img">
-            <img src="Image\introIMG.png" alt="coding material image">
-        </div>
-
-    </div>
-
-
-    <div id="courses">
-        <p>COURSES</p>
-        <div id="grid-courses">
-            <!-- all grid items use javascript to fill in -->
-            <div class="courses-gridbox">
-                <img src="Image\htmlIMG.png" alt="courseImg">
-                <h3>The Complete Guide to HTML</h3>
-                <h4>From zero to master in this course!</h4>
-                <h4>4.7 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                        class="fa-solid fa-star-half-stroke"></i> (1060)</h4>
-                <h4>$69.99</h4>
-            </div>
-            <div class="courses-gridbox">2</div>
-            <div class="courses-gridbox">3</div>
-            <div class="courses-gridbox">4</div>
-            <div class="courses-gridbox">5</div>
-            <div class="courses-gridbox">6</div>
-            <div class="courses-gridbox">7</div>
-            <div class="courses-gridbox">8</div>
-        </div>
-    </div>
-
-
-    <div id="review">
-        <!-- a review box with quote from student and a round student profile picture -->
-        <div id="review-box">
-            <div id="review-text">
-                <p>“Best tutorial I've ever viewed on React, bar none. I have found this course to be clear, concise,
-                    direct, and easy-to-follow. It has also been fun to watch and easy to comprehend all the elements.
-                    Thank you!”</p>
-
-            </div>
-            <div id="review-img"><img src="Image/studentIMG.png" alt="studentImg">
-                <h3>Mary Jane</h3>
-                <p>Student of Web Developer</p>
-            </div>
-        </div>
-        <button id="review-button"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
-
-
-    <div id="teachers">
-        <p>OUR TEACHERS</p>
-        <div id="teachersbox">
-            <div class="teacherimg">
-                <img src="Image/teacher1.png" alt="teacherImg">
-                <h3>John Doe</h3>
-                <p>Mobile App Professor</p>
-            </div>
-            <div class="teacherimg">
-                <img src="Image/teacher2.png" alt="teacherImg">
-                <h3>Natalia Roses</h3>
-                <p>Web Developer Professor</p>
-            </div>
-            <div class="teacherimg">
-                <img src="Image/teacher3.png" alt="teacherImg">
-                <h3>Sean Micheal</h3>
-                <p>Backend Professor</p>
-            </div>
-            <div class="teacherimg">
-                <img src="Image/teacher4.png" alt="teacherImg">
-                <h3>Ivanov Eva</h3>
-                <p>UI/UX Professor</p>
-            </div>
-        </div>
-    </div>
 
 
 
 
+    <div>Aboutus </div>
 
 
     <div id="footer">
@@ -176,7 +96,24 @@
         <div id="Mcopyright-footer"><i class="fa-regular fa-copyright"></i>2023, VGrow.com.kh</div>
     </div>
 
-    <script src="index.js"></script>
+    <script>
+        // id="toggle-button"
+        const togglebutton = document.getElementById("toggle-button");
+        const dropdowncontents = document.querySelectorAll(".dropdown-content");
+
+        function togglefunction() {
+            dropdowncontents.forEach(function (dropdowncontent) {
+                dropdowncontent.classList.toggle("Mnavtoggle");
+            });
+        }
+        // on load toggle once to hide the nav bar
+        togglefunction();
+
+        togglebutton.addEventListener("click", function () {
+            togglefunction()
+        });
+
+    </script>
 </body>
 
 </html>

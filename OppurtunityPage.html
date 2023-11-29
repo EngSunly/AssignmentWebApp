@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VGrow</title>
-    <!-- if you need bootstrap -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    
-    <link rel="stylesheet" href="HeaderFooter.css">
+    <link rel="stylesheet" href="indexstyle.css">
     <!-- get cdn for logo open public -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/53ca21cb35.js" crossorigin="anonymous"></script>
@@ -25,26 +22,29 @@
 
         <h1 class="nav-linkLogo logomobile mobileview"><button id="toggle-button" class="dropdown mobileview"><i
                     class="fa-solid fa-list"></i></button>VGrow</h1></a>
-        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#intro-div">Home</a>
-        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#courses">Courses</a>
-        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="ContactUS\AboutUs.html">About Us</a>
-        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#teachers">Our Team</a>
-        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#Oppurtunity">Oppurtunity</a>
-        <a class="navigation-link mobileview dropdown-content Mnavtoggle" href="#footer">ContactUs</a>
+        <a class="nav-link mobileview dropdown-content Mnavtoggle" href="./index.html">Home</a>
+        <a class="nav-link mobileview dropdown-content Mnavtoggle" href="./CoursePage.html">Courses</a>
+        <a class="nav-link mobileview dropdown-content Mnavtoggle" href="./AboutusPage.html">About Us</a>
+        <a class="nav-link mobileview dropdown-content Mnavtoggle" href="./OurTeamPage.html">Our Team</a>
+        <a class="nav-link mobileview dropdown-content Mnavtoggle" href="./OppurtunityPage.html">Oppurtunity</a>
+        <a class="nav-link mobileview dropdown-content Mnavtoggle" href="./ContactUsPage.html">ContactUs</a>
         <div id="mviewbottom " class="mobileview"></div>
 
         <div class="windowview navwindow">
             <h1 class="nav-linkLogo windowview">VGrow</h1></a>
-            <a class="nav-links windowview" href="#intro-div">Home</a>
-            <a class="navigation-link windowview" href="#courses">Courses</a>
-            <a class="navigation-link windowview" href="ContactUS\AboutUs.html">About Us</a>
-            <a class="navigation-link windowview" href="#teachers">Our Team</a>
-            <a class="navigation-link windowview" href="#Oppurtunity">Oppurtunity</a>
-            <a class="navigation-link windowview" href="#footer">ContactUs</a>
+            <a class="nav-link windowview" href="./index.html">Home</a>
+            <a class="nav-link windowview" href="./CoursePage.html">Courses</a>
+            <a class="nav-link windowview" href="./AboutusPage.html">About Us</a>
+            <a class="nav-link windowview" href="./OurTeamPage.html">Our Team</a>
+            <a class="nav-link windowview" href="./OppurtunityPage.html">Oppurtunity</a>
+            <a class="nav-link windowview" href="./ContactUsPage.html">ContactUs</a>
         </div>
 
     </nav>
     <div id="spaceforNavbar"></div>
+
+
+    <div> Oppurtunity Page</div>
 
 
 
@@ -96,6 +96,7 @@
     </div>
 
     <script>
+        // id="toggle-button"
         const togglebutton = document.getElementById("toggle-button");
         const dropdowncontents = document.querySelectorAll(".dropdown-content");
 
@@ -110,6 +111,7 @@
         togglebutton.addEventListener("click", function () {
             togglefunction()
         });
+
     </script>
 </body>
 
